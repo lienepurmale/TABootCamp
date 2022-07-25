@@ -2,11 +2,12 @@ package com.bootcampexercise.module2.activity;
 
 public class FindLargest {
     public static void main (String []args){
-        int x = 15;
-        if (x > 15) {
-            System.out.println("X is greater than 15");
+        int x = 25;
+        int y = 15;
+        if (x > y) {
+            System.out.println("x is greater than y");
                 } else {
-            System.out.println("X is less than 15");}
+            System.out.println("X is less than y");}
     }
             }
 
