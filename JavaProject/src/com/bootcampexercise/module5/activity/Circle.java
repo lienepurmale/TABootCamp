@@ -8,7 +8,7 @@ public class Circle extends Shape {
    public Circle(){
        System.out.println("This is circle");
 }
-    private static final double pi = 3.14;
+    private static final double Pi = 3.14;
 
 
 
@@ -21,11 +21,11 @@ public class Circle extends Shape {
 
 
     public double calculateArea() {
-        return (pi*(radius*radius));
+        return (Pi*(radius*radius));
     }
 
     public double calculatePerimeter() {
-        return pi*radius;
+        return Pi*radius;
     }
 
 }
