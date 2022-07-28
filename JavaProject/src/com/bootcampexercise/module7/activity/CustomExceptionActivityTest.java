@@ -17,12 +17,7 @@ public class CustomExceptionActivityTest {
             if (validUsers[i] == name) {
                 flag = 1;
             }
-            //check if parameter name contains a value which is found in validUsers array and change flag's value accordingly
-            int flag = 0;
-            for (int i = 0; i < 4; i++) {
-                if (name == validUsers[i]) {
-                    flag = 1;
-                }
+                          }
 // to check if flag is one, print a message "Welcome to Payroll program"
                 else if(flag==1){
                     System.out.println("Welcome to Payroll program");
