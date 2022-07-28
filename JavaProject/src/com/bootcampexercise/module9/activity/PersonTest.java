@@ -23,6 +23,7 @@ public class PersonTest extends TestCase {
         person.setHeight(height1);
         assertEquals(height1, person.getHeight()); //Positive testing for height
     }
+
     public void testGetSetWeight() {
         int weight1 = 120;
         person.setWeight(weight1);
@@ -32,7 +33,7 @@ public class PersonTest extends TestCase {
     public void testGetSetWeight2() {
         int weight2 = 120;
         person.setWeight(weight2);
-        assertEquals(0, person.getWeight()); //Negative testing for Weight
+        assertEquals(weight2, person.getWeight()); 
     }
 
     //TODO: create unit test for getBodyMassIndex method
@@ -40,36 +41,5 @@ public class PersonTest extends TestCase {
         double BMI = person.getBMIndex(0, 0);
         assertEquals(0.0, BMI);
     }
-
-    public void test2BMI() {
-        double BMI = person.getBMIndex(60, 1f);
-        double bmiExpected = 100 / Math.sqrt(-2.0);
-        assertEquals(bmiExpected, BMI);
-    }
-
-    public void test3BMI() {
-        double BMI = person.getBMIndex(120, 2f);
-        double bmiExpected = 100 / Math.sqrt(-2.0);
-        assertEquals(bmiExpected, BMI);
-    }
-
-    public void test4BMI() {
-        double BMI = person.getBMIndex(60, 2.5f);
-        double bmiExpected = 50 / Math.sqrt(-2.0);
-        assertEquals(bmiExpected, BMI);
-    }
-
-    public void test5BMI() {
-        double BMI = person.getBMIndex(-60, 1f);
-        double bmiExpected = -50/ Math.sqrt(-2.0);
-        assertEquals(bmiExpected, BMI);
-    }
 }
-
-
-
-
-
-
-
 
