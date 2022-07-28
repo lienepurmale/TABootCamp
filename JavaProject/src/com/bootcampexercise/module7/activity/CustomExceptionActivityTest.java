@@ -17,12 +17,9 @@ public class CustomExceptionActivityTest {
             if (validUsers[i] == name) {
                 flag = 1;
             }
-                          }
-// to check if flag is one, print a message "Welcome to Payroll program"
-                else if(flag==1){
-                    System.out.println("Welcome to Payroll program");
-
-            }
         }
+// to check if flag is one, print a message "Welcome to Payroll program"
+        //else if(flag==1){
+        System.out.println("Welcome to Payroll program");
     }
 }
