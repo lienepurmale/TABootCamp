@@ -27,9 +27,9 @@ public class MapActivity {
 
         System.out.println("*************************************");
         System.out.println("Key\tValue");
-        Iterator iterat = keySet.iterator();
-        while (iterat .hasNext()){
-            String key = (String) iterat .next();
+        Iterator it = keySet.iterator();
+        while (it.hasNext()){
+            String key = (String) it.next();
             System.out.println(key + "\t" + map.get(key));
         }
         System.out.println("*************************************");
