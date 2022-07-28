@@ -2,8 +2,9 @@ package com.bootcampexercise.module7.activity;
 
 public class ArithmeticExceptionActivity {
     public static void main(String[] args) {
-    ArithmeticExceptionActivity obj = new ArithmeticExceptionActivity();
-        obj.catchMe(10, 0);
+    ArithmeticExceptionActivity ari = new ArithmeticExceptionActivity();
+        ari.catchMe(10, 0);
+        ari.catchMe(10, 2);
 }
        void catchMe(int num1, int num2) {
     try {
