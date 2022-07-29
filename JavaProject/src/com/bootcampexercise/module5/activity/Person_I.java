@@ -13,7 +13,6 @@ public class Person_I {
         this.age = 0;
         System.out.println("I'm Person_I constructor");
     }
-
     //TODO: Write parameterized constructor with variables name and age
     public Person_I(String name, int age) {
         this.name = name;

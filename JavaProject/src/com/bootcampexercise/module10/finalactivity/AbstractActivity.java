@@ -3,13 +3,20 @@ package com.bootcampexercise.module10.finalactivity;
 //call introduce from student
 public class AbstractActivity {
     public static void main(String[] args) {
-        Students newStudent = new Students();
-        Employee newEmployee = new Employee();
 
-        System.out.println("Intro from student");
-        newStudent.personIntro();
-        System.out.println("Intro from employee");
-        newEmployee.personIntro();
+        Employee employee1= new Employee();
+        employee1.setName("Liene");
+        employee1.setAge(28);
+        employee1.setTitle("developer");
+        employee1.setCompany("Asos");
+        employee1.personIntro();
+
+        Students students1= new Students();
+        students1.setSchoolName("Cambridge");
+        students1.personIntro();
+
+
+
 
     }
 }

@@ -12,13 +12,12 @@ public class Employee extends Person {
        this.salary= salary;
        this.title=title;
     }
-    public Employee() {
+   public Employee() {
         this.company = "Unknown";
         this.salary = 800;
         this.title = "developer";
         System.out.println("I am from company " + company + " and my salary is " + salary);
     }
-  //Add getters and setters
 
     public String getCompany() {
         return company;
