@@ -1,7 +1,7 @@
 package com.bootcampexercise.module10.finalactivity;
-
+//Employee class should extend Person class
 public class Employee extends Person {
-
+//Create attributes: jobTitle, company, salary
     private String company;
     private double salary;
     private String title;
