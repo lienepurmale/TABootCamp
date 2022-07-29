@@ -7,11 +7,18 @@ public class Employee extends Person {
     private String title;
 
     //Add different constructors
-    public Employee() {
-        System.out.println("I am a developer");
+    public Employee (String company, String title, double salary) {
+        this.company= company;
+       this.salary= salary;
+       this.title=title;
     }
-
-    //Add getters and setters
+    public Employee() {
+        this.company = "Unknown";
+        this.salary = 800;
+        this.title = "developer";
+        System.out.println("I am from company " + company + " and my salary is " + salary);
+    }
+  //Add getters and setters
 
     public String getCompany() {
         return company;
@@ -37,7 +44,8 @@ public class Employee extends Person {
     //I am work as <jobTitle> in <company>“ and my salary is <salary>
 
     public void personIntro() {
-        System.out.println("My name is"+ getName() +"and I am " + getAge() +"years old");
+        System.out.println("My name is " + getName() + " and I am " + getAge() + " years old");
+        System.out.println("I am working as "+ getTitle() + " in " + getCompany() + " and my salary is " + getSalary());
             }
 }
 

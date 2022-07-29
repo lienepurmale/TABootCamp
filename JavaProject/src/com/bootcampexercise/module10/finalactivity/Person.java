@@ -5,10 +5,18 @@ public abstract class Person {
     private int age;
     private String name;
 
+    public Person(String name, int age){
+        this.name= name;
+        this.age= age;
+    }
+    public Person(){
+        this.name= "Liene";
+        this.age= 28;
+    }
     // Create setters and getters for attributes
+
     public int getAge() {
         return age;
-
     }
     public void setAge(int age) {
         this.age = age;

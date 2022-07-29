@@ -18,6 +18,6 @@ public class Students extends Person {
 // Override method introduce of person -> "I am study in university <schoolName>“
 
     public void personIntro() {
-        System.out.println("I am studying in university" + this.schoolName);
+        System.out.println("I am studying in university " + this.schoolName);
     }
 }
