@@ -45,7 +45,7 @@ public class Employee extends Person {
 
     public void personIntro() {
         System.out.println("My name is" + getName() + "and I am " + getAge() + "years old");
-        System.out.println("I work as" + getTitle() + "in" + getCompany() + "and my salary is" + getSalary());
+        System.out.println("");
     }
 }
 
