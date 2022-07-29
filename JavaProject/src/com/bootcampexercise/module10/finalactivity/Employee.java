@@ -10,7 +10,6 @@ public class Employee extends Person {
     public Employee() {
         System.out.println("I am a developer");
     }
-
     public Employee() {
         System.out.println("I am a teacher");
     }
@@ -32,12 +31,12 @@ public class Employee extends Person {
         this.company = company;
     }
 
-    public double setSalary() {
-        return salary;
+    public double setSalary(double salary) {
+        this.salary= salary;
     }
 
     public double getSalary() {
-        this.salary = salary;
+        return salary;
     }
     //Override method introduce of person class ->
     //"My name is <name> and i am <age> years old
@@ -45,8 +44,7 @@ public class Employee extends Person {
 
     public void personIntro() {
         System.out.println("My name is" + getName() + "and I am " + getAge() + "years old");
-        System.out.println("");
-    }
+            }
 }
 
 
