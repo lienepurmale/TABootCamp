@@ -15,7 +15,7 @@ public class Students extends Person {
 //Students class should extend to Person class
 // Override method introduce of person -> "I am study in university <schoolName>“
 
-    public void personIntro() {
+    public void introduce() {
         System.out.println("I am studying in university " + getschoolName());
     }
 }

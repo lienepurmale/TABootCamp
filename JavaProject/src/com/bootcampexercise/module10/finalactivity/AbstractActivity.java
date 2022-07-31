@@ -7,13 +7,13 @@ public class AbstractActivity {
         Employee employee1= new Employee();
         employee1.setName("Liene");
         employee1.setAge(28);
-        employee1.setTitle("developer");
+        employee1.setJobTitle("developer");
         employee1.setCompany("Asos");
-        employee1.personIntro();
+        employee1.introduce();
 
         Students students1= new Students();
         students1.setSchoolName("Cambridge");
-        students1.personIntro();
+        students1.introduce();
 
 
 

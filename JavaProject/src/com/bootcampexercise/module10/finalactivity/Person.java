@@ -20,6 +20,6 @@ public abstract class Person {
         this.name = name;
     }
     //Define introduce method
-    public abstract void personIntro();
+    public abstract void introduce();
 }
 

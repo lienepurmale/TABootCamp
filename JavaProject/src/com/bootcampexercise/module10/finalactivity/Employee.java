@@ -4,25 +4,28 @@ public class Employee extends Person {
 //Create attributes: jobTitle, company, salary
     private String company;
     private double salary;
-    private String title;
+    private String jobTitle;
 
     //Add different constructors
-    public Employee (String company, String title, double salary) {
+    public Employee (String company, String jobTitle, double salary) {
         this.company= company;
        this.salary= salary;
-       this.title=title;
+       this.jobTitle=jobTitle;
     }
+//Extra constructor
    public Employee() {
         this.company = "Unknown";
         this.salary = 800;
-        this.title = "developer";
+        this.jobTitle = "developer";
         System.out.println("I am from company " + company + " and my salary is " + salary);
     }
 
     public String getCompany() {
+
         return company;
     }
     public void setCompany(String company) {
+
         this.company = company;
     }
     public double getSalary(){
@@ -31,20 +34,21 @@ public class Employee extends Person {
     public void setSalary(double salary){
         this.salary= salary;}
 
-    public String getTitle() {
-        return title;
+    public String getJobTitle() {
+        return jobTitle;
     }
-    public void setTitle(String title) {
-        this.title = title;
+    public void setJobTitle(String title)
+    {
+        this.jobTitle = jobTitle;
     }
 
     //Override method introduce of person class ->
-    //"My name is <name> and i am <age> years old
+    //"My name is <name> and I am <age> years old
     //I am work as <jobTitle> in <company>“ and my salary is <salary>
 
-    public void personIntro() {
+    public void introduce() {
         System.out.println("My name is " + getName() + " and I am " + getAge() + " years old");
-        System.out.println("I am working as "+ getTitle() + " in " + getCompany() + " and my salary is " + getSalary());
+        System.out.println("I am working as "+ getJobTitle() + " in " + getCompany() + " and my salary is " + getSalary());
             }
 }
 
