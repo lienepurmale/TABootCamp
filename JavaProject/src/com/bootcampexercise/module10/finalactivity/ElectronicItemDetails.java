@@ -11,6 +11,8 @@ import java.util.Map;
 public class ElectronicItemDetails {
     public static void main(String[] args){
 
+        ElectronicItemDetails tv = new ElectronicItemDetails();
+
     Map<String, Double> itemHashMap= new HashMap<>();
 
     itemHashMap.put("TV", 1.1);
@@ -19,8 +21,7 @@ public class ElectronicItemDetails {
     itemHashMap.put ("Laptop", 4.4);
 
 
-    ElectronicItemDetails tv = new ElectronicItemDetails();
-    System.out.println("The price of the TV is " + tv.returnPriceOfItem(itemHashMap, "TV")); }
+       System.out.println("The price of the TV is " + tv.returnPriceOfItem(itemHashMap, "TV")); }
 
     public double returnPriceOfItem(Map<String, Double> map, String name){
         return map.get(name);}
